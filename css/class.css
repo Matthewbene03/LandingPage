@@ -31,7 +31,7 @@
 }
 
 .backgroundImg{
-    background-image: url("/img/background.svg");
+    background-image: url("../img/background.svg");
     height: 100vh;
     padding-top: 100px;
     color: white;
