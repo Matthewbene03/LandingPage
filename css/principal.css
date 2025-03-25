@@ -1,0 +1,71 @@
+/* Smartphones (701px para baixo) */
+@media only screen and (max-width: 600px) {
+    .text{
+        align-content: center;
+    }
+    .text h1{
+        margin-top: 50px;
+        margin-right: 0;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .text p{
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .img{
+        height: 100px;
+        width: 100%;
+    }
+
+    .img img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 702px para cima) */
+@media only screen and (max-width: 768px){
+    .backgroundImg{
+        padding-top: 0;
+    }
+}
+
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, de 769px até 1200px para cima) */
+@media only screen and (max-width:1200px) {
+    .conteiner{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+        border: 2px solid white;
+    }
+
+    .text{
+        flex: 40%;
+        align-content: center;
+    }
+    .text h1{
+        margin-right: 0;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .text p{
+        margin: 0 15%;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .img{
+        flex: 60%;
+    }
+
+    .img img{
+        width: 90%;
+    }
+}

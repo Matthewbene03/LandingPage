@@ -1,0 +1,239 @@
+section#Contact.backgroundImg {
+    height: auto;
+}
+
+.filhoContact {
+    margin-bottom: 50px;
+}
+
+.filhoContact .text h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.filhoContact .img {
+    height: 500px;
+}
+
+.filhoContact .img img {
+    height: 100%;
+}
+
+div.forms form {
+    font-size: 23px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+div.forms legend {
+    font-style: italic;
+    color: rgb(219, 219, 219);
+}
+
+.gird_forms {
+    display: grid;
+    grid-template-areas:
+        'PriNome SegNome'
+        'Email Email'
+        'YourMsg YourMsg'
+        'Btn Btn';
+    gap: 15px;
+    border: 2px solid red;
+}
+
+#div_PriNome {
+    grid-area: PriNome;
+}
+
+#div_PriNome input {
+    height: 70px;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 20px;
+    color: rgb(207, 207, 207);
+}
+
+#div_SegNome {
+    grid-area: SegNome;
+}
+
+#div_SegNome input {
+    height: 70px;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 20px;
+    color: rgb(207, 207, 207);
+}
+
+#div_Email {
+    grid-area: Email;
+}
+
+#div_Email input {
+    height: 70px;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 20px;
+    color: rgb(207, 207, 207);
+}
+
+#div_YourMsg {
+    grid-area: YourMsg;
+}
+
+#div_YourMsg textarea {
+    height: 150px;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 20px;
+    color: rgb(207, 207, 207);
+}
+
+#div_Btn {
+    grid-area: Btn;
+}
+
+#div_Btn button {
+    height: 80px;
+    width: 230px;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: white;
+    background: none;
+    border: 7px solid white;
+    cursor: pointer;
+}
+
+#div_Btn button:hover {
+    background-color: white;
+    color: #18142c;
+}
+
+@media only screen and (max-width:400px) {
+    .gird_forms {
+        grid-template-areas:
+            'PriNome'
+            'SegNome'
+            'Email'
+            'YourMsg'
+            'Btn';
+        gap: 15px;
+        border: 2px solid red;
+    }
+
+    #div_PriNome {
+        grid-area: PriNome;
+    }
+
+    #div_PriNome input {
+        height: 50px;
+    }
+
+    #div_SegNome {
+        grid-area: SegNome;
+    }
+
+    #div_SegNome input {
+        height: 50px;
+    }
+
+    #div_Email {
+        grid-area: Email;
+    }
+
+    #div_Email input {
+        height: 50px;
+    }
+
+    #div_YourMsg {
+        grid-area: YourMsg;
+    }
+
+    #div_YourMsg textarea {
+        height: 100px;
+        width: 100%;
+    }
+
+    #div_Btn {
+        grid-area: Btn;
+        width: 100%;
+    }
+
+    #div_Btn button {
+        height: 50px;
+        width: 100%;
+        font-size: 17px;
+    }
+
+    div.forms form {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    div.filhoContact>div.text h2 {
+        font-size: 30px;
+    }
+
+    div.filhoContact>div.text p {
+        font-size: 18px;
+        letter-spacing: normal;
+        font-weight: normal;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width:768px) and (min-width: 401px) {
+    .gird_forms {
+        grid-template-areas:
+            'PriNome'
+            'SegNome'
+            'Email'
+            'YourMsg'
+            'Btn';
+        gap: 15px;
+        border: 2px solid red;
+    }
+
+    #div_PriNome {
+        grid-area: PriNome;
+    }
+
+    #div_PriNome input {
+        height: 50px;
+    }
+
+    #div_SegNome {
+        grid-area: SegNome;
+    }
+
+    #div_SegNome input {
+        height: 50px;
+    }
+
+    #div_Email {
+        grid-area: Email;
+    }
+
+    #div_Email input {
+        height: 50px;
+    }
+
+    #div_YourMsg {
+        grid-area: YourMsg;
+    }
+
+    #div_YourMsg textarea {
+        height: 100px;
+        width: 100%;
+    }
+
+    #div_Btn {
+        grid-area: Btn;
+    }
+}

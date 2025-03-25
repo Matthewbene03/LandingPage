@@ -1,0 +1,143 @@
+.navMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+.logo {
+    flex: 20%;
+    margin-left: 10%;
+    width: 100%;
+}
+
+.logo a {
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 23px;
+    color: black;
+    padding: 0;
+}
+
+.links {
+    flex: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 10%;
+}
+
+.logo a:hover {
+    border: none;
+    cursor: pointer;
+}
+
+/* Smartphones (701px para baixo) */
+@media only screen and (max-width: 701px) {
+    .navMenu {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 20px;
+        position: static;
+    }
+
+    .logo {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .logo a {
+        font-size: 35px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .links {
+        margin-right: 0;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .links a {
+        padding: 10px;
+    }
+}
+
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 702px para cima) */
+@media only screen and (max-width: 768px) and (min-width:702px) {
+    .navMenu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        position: static;
+        margin-bottom: 1000px;
+        margin: 0 10%;
+    }
+
+    .logo {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .logo a {
+        font-size: 50px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .links {
+        margin-right: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .links a{
+        padding: 10px 20px;
+    }
+}
+
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, de 769px até 1200px para cima) */
+@media only screen and (min-width: 769px) and (max-width:1200px) {
+    .logo a {
+        font-size: 40px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .links a {
+        padding: 5px;
+    }
+}

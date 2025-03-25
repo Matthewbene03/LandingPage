@@ -1,0 +1,126 @@
+.centralizar80Porc{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.centralizar50Porc{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.centralizar40Porc{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.centralizarFlexColumn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.centralizarFlexColumn_left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+}
+
+.backgroundImg{
+    background-image: url("/img/background.svg");
+    height: 100vh;
+    padding-top: 100px;
+    color: white;
+    border: 2px solid red;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    border: 2px solid white;
+}
+
+.text{
+    flex: 40%;
+    align-content: center;
+    height: 100%;
+    color: white;
+    border: 2px solid green;
+}
+
+.text h1{
+    margin-right: 30%;
+    margin-bottom: 30px;
+}
+
+.text p{
+    margin-right: 10%;
+    letter-spacing: 5px;
+    font-size: 18px;
+}
+
+.img{
+    flex: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid yellow;
+}
+
+.img img{
+    width: 70%;
+}
+
+.grid_3ColG{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+}
+
+.grid_3Col{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+    padding-top: 80px;
+    counter-reset: cardsNumber;
+}
+
+.cards h3{
+    font-size: 30px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.cards h3::before{
+    counter-increment: cardsNumber;
+    content: counter(cardsNumber);
+    position: absolute;
+    top: -30px;
+    left: -5px;
+    font-style: italic;
+    transform: rotate(10deg);
+    font-size: 70px;
+}
+
+@media only screen and (max-width: 768px){
+    .backgroundImg{
+        padding-top: 0;
+    }
+}

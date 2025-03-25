@@ -1,0 +1,74 @@
+.Intro {
+    height: 100vh;
+    padding-top: 100px;
+    border: 2px solid green;
+}
+
+.introText {
+    height: 100%;
+    border: 2px solid red;
+}
+
+.introText h2 {
+    font-size: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.introText p {
+    text-align: center;
+    margin: 0px 20% 30px 20%;
+}
+
+/* Smartphones (424px para baixo) */
+@media only screen and (max-width: 424px) {
+    .Intro {
+        height: auto;
+    }
+
+    section.Intro > div.centralizarFlexColumn.introText{
+        justify-content: flex-start;
+    }
+
+    .introText h2 {
+        font-size: 30px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .introText p {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .Intro{
+        padding-top: 30px;
+    }
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 702px para cima) */
+@media only screen and (max-width: 700px) and (min-width: 425px) {
+    .introText h2 {
+        font-size: 40px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .introText p {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, de 769px até 1200px para cima) */
+@media only screen and (max-width:1390px) {
+    .introText p {
+        text-align: center;
+        margin: 0 10% 20px 10%;
+    }
+}

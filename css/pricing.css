@@ -1,0 +1,72 @@
+.pricing{
+    height: 100vh;
+    padding-top: 100px;
+    border: 2px solid green;
+}
+
+.paiPricing{
+    height: 100%;
+    border: 2px solid gray;
+}
+
+.paiPricing p{
+    font-weight: normal;
+    text-align: center;
+}
+
+div.paiPricing > table{
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 250px;
+    width: 80%;
+}
+
+.paiPricing table,
+.paiPricing tr,
+.paiPricing th,
+.paiPricing td{
+    border: 1px solid rgb(209, 209, 209);
+    border-collapse: collapse;
+    text-align: left;
+    overflow-x: auto;
+}
+
+.paiPricing tr th{
+    background-color: rgb(209, 209, 209);
+}
+
+@media only screen and (max-width: 391px) {
+    div.paiPricing > table{
+        margin: 0 auto;
+        margin-top: 50px;
+        height: 250px;
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    section.pricing > div.paiPricing.centralizar50Porc{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    section.pricing{
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 551px){
+    section.pricing > div.paiPricing.centralizar50Porc{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:1200px) and (min-width: 769px){
+    section.pricing > div.paiPricing.centralizar50Porc{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
