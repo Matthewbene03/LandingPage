@@ -1,12 +1,10 @@
 .Intro {
     height: 100vh;
     padding-top: 100px;
-    border: 2px solid green;
 }
 
 .introText {
     height: 100%;
-    border: 2px solid red;
 }
 
 .introText h2 {

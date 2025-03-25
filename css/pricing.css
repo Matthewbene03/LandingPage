@@ -1,12 +1,10 @@
 .pricing{
     height: 100vh;
     padding-top: 100px;
-    border: 2px solid green;
 }
 
 .paiPricing{
     height: 100%;
-    border: 2px solid gray;
 }
 
 .paiPricing p{

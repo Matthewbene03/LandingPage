@@ -1,12 +1,10 @@
 .gallery {
     height: auto;
     padding-top: 100px;
-    border: 2px solid black;
 }
 
 .paiGallery{
     height: 100%;
-    border: 2px solid red;
 }
 
 .paiGallery div h2{
